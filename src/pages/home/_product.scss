@@ -1,0 +1,179 @@
+#product {
+    margin: 100px 0;
+    .categories{
+        h5{
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+        .categories_info{
+            .info_list{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+                p{
+                    color: gray;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .color{
+        margin-top: 70px;
+        h3{
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            li{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            .burlywood{
+                background-color: burlywood;
+            }
+            .darkseagreen{
+                background-color: darkseagreen;
+            }
+            .lightblue{
+                background-color: lightblue;
+            }
+            .wheat{
+                background-color: wheat;
+            }
+
+        }
+    }
+    .sellers{
+        margin-top: 70px;
+        h1{
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+        .sellers_card{
+            display: flex;
+            margin-bottom: 24px;
+            .card_image{
+
+            }
+            .card_info{
+                margin-left: 10px;
+                h5{
+                    font-size: 18px;
+                    color: gray;
+                }
+                p{
+                    font-size: 18px;
+                    margin-top: 14px;
+                }
+
+            }
+        }
+    }
+    .product_card{
+        .card_image{
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            transition: 0.1s ease-in-out;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &:hover{
+                .hover_image{
+                    opacity: 1;
+                    .image_icon{
+                        transform: translateY(0);
+                    }
+                }
+
+            }
+            .hover_image{
+                position:absolute;
+                transition: 0.1s ease-in-out;
+                width: 100%;
+                height: 100%;
+                inset: 0;
+                opacity: 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .image_icon{
+                    position: absolute;
+                    bottom: 10px;
+                    left: 80px;
+                    transform: translateY(60px);
+                    transition: 0.5s ease-in-out;
+                    ul{
+                        display: flex;
+                        gap: 10px;
+                        li{
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 50%;
+                            background-color: black;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: 0.3s ease-in-out;
+                            i{
+                                color: white;
+                                font-size: 20px;
+                            }
+                            &:hover{
+                                background-color: burlywood;
+                            }
+                        }
+                    }
+                }
+            }
+           
+        }
+        .card_info{
+            h5{
+                margin-top: 20px;
+              font-size: 20px;
+            }
+            ul{
+                margin: 8px 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+                li{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    
+                }
+                .burlywood{
+                    background-color: burlywood;
+                }
+                .darkseagreen{
+                    background-color: darkseagreen;
+                }
+                .lightblue{
+                    background-color: lightblue;
+                }
+                .wheat{
+                    background-color: wheat;
+                }
+
+            }
+            p{
+                font-size: 20px;
+                color: black;
+                font-weight: 600;
+            }
+        }
+
+    }
+    
+}

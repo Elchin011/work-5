@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#product {
+  margin: 100px 0;
+}
+#product .categories h5 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+#product .categories .categories_info .info_list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+#product .categories .categories_info .info_list p {
+  color: gray;
+  font-size: 18px;
+}
+#product .color {
+  margin-top: 70px;
+}
+#product .color h3 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+#product .color ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+#product .color ul li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+#product .color ul .burlywood {
+  background-color: burlywood;
+}
+#product .color ul .darkseagreen {
+  background-color: darkseagreen;
+}
+#product .color ul .lightblue {
+  background-color: lightblue;
+}
+#product .color ul .wheat {
+  background-color: wheat;
+}
+#product .sellers {
+  margin-top: 70px;
+}
+#product .sellers h1 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+#product .sellers .sellers_card {
+  display: flex;
+  margin-bottom: 24px;
+}
+#product .sellers .sellers_card .card_info {
+  margin-left: 10px;
+}
+#product .sellers .sellers_card .card_info h5 {
+  font-size: 18px;
+  color: gray;
+}
+#product .sellers .sellers_card .card_info p {
+  font-size: 18px;
+  margin-top: 14px;
+}
+#product .product_card .card_image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.1s ease-in-out;
+}
+#product .product_card .card_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#product .product_card .card_image:hover .hover_image {
+  opacity: 1;
+}
+#product .product_card .card_image:hover .hover_image .image_icon {
+  transform: translateY(0);
+}
+#product .product_card .card_image .hover_image {
+  position: absolute;
+  transition: 0.1s ease-in-out;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  opacity: 0;
+}
+#product .product_card .card_image .hover_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#product .product_card .card_image .hover_image .image_icon {
+  position: absolute;
+  bottom: 10px;
+  left: 80px;
+  transform: translateY(60px);
+  transition: 0.5s ease-in-out;
+}
+#product .product_card .card_image .hover_image .image_icon ul {
+  display: flex;
+  gap: 10px;
+}
+#product .product_card .card_image .hover_image .image_icon ul li {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+#product .product_card .card_image .hover_image .image_icon ul li i {
+  color: white;
+  font-size: 20px;
+}
+#product .product_card .card_image .hover_image .image_icon ul li:hover {
+  background-color: burlywood;
+}
+#product .product_card .card_info h5 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+#product .product_card .card_info ul {
+  margin: 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+#product .product_card .card_info ul li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+#product .product_card .card_info ul .burlywood {
+  background-color: burlywood;
+}
+#product .product_card .card_info ul .darkseagreen {
+  background-color: darkseagreen;
+}
+#product .product_card .card_info ul .lightblue {
+  background-color: lightblue;
+}
+#product .product_card .card_info ul .wheat {
+  background-color: wheat;
+}
+#product .product_card .card_info p {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+}
+
+#shop {
+  margin-top: 100px;
+}
+#shop h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+#shop .cards .card {
+  border: none;
+}
+#shop .cards .card .card_image {
+  width: 100%;
+  height: 200px;
+}
+#shop .cards .card .card_image img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#shop .cards .card .card_info {
+  text-align: center;
+  margin-top: 16px;
+}
+#shop .cards .card .card_info h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+#shop .cards .card .card_info p {
+  margin-top: 10px;
+  color: gray;
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */
